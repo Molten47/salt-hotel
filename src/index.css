@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --primary-color: #f4f0ec;
+  --writing-color: #111111;
+  --nav-writing-color: #a3a09e;
+
+  --basic-font: 'Inter', 'sans-serif';
+  --new-font: 'DM Sans', 'sans-serif';
+
+  
+}
+body, h1, h2, h3, h4, h5, h6, ul {
+  margin: 0;
+  padding: 0
+  
+}
+
+/* Keep your body styles */
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', 'sans-serif';
+  height: 100vh;
+  width: 100%;
+  background-color: var(--primary-color)
+}
+@layer utilities{
+  .bg-primary{
+    background-color: var(--primary-color);
+  }
+  .text-writing{
+    color: var(--writing-color);
+  }
+  .bg-lines{
+    background-color: var(--writing-color);
+  }
+  .basic-font{
+    font-family: var(--basic-font);
+  }
+  .new-font{
+    font-family: var(--new-font);
+  }
+}
